@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "category": "Smartphones",
+        "name": "Galaxy S23",
+        "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_101836612?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
+        "specifications": {
+            "Operating System": "Android 17",
+            "Display": "6.7 inches, Super AMOLED",
+            "Processor": "Octa-core Exynos 1400",
+            "RAM": "8 GB",
+            "Storage": "128 GB",
+            "Camera": "Triple 64 MP + 12 MP + 5 MP",
+            "Battery": "5000 mAh",
+            "Price": "999"
+        },
+        "rank": 3,
+        "description": "Introducing the Galaxy S23, a revolutionary smartphone that pushes the boundaries of innovation. With its stunning Super AMOLED display, powerful Exynos 1400 processor, and versatile triple camera setup, the Galaxy S23 delivers an unparalleled mobile experience. Get ready to explore a new era of connectivity and creativity with the Galaxy S23."
+    },
+    {
+        "id": 2,
+        "category": "Smartphones",
+        "name": "iPhone 15 Pro",
+        "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_118110719?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
+        "specifications": {
+            "Operating System": "iOS 20",
+            "Display": "6.5 inches, Super Retina XDR",
+            "Processor": "Hexa-core A18 Bionic",
+            "RAM": "6 GB",
+            "Storage": "256 GB",
+            "Camera": "Triple 12 MP + 12 MP + 12 MP",
+            "Battery": "4500 mAh",
+            "Price": "1199"
+        },
+        "rank": 1,
+        "description": "Experience the pinnacle of mobile technology with the iPhone 15 Pro. Featuring a stunning Super Retina XDR display, lightning-fast A18 Bionic chip, and advanced triple-camera system, the iPhone 15 Pro sets a new standard for excellence. Elevate your everyday with the iPhone 15 Pro."
+    },
+    {
+        "id": 3,
+        "category": "Smartphones",
+        "name": "Pixel 7",
+        "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_125977698?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
+        "specifications": {
+            "Operating System": "Android 18",
+            "Display": "6.4 inches, OLED",
+            "Processor": "Octa-core Snapdragon 888",
+            "RAM": "12 GB",
+            "Storage": "512 GB",
+            "Camera": "Dual 108 MP + 12 MP",
+            "Battery": "4800 mAh",
+            "Price": "899"
+        },
+        "rank": 2,
+        "description": "Meet the Pixel 7, Google's latest flagship smartphone designed to redefine your mobile experience. Boasting a brilliant OLED display, lightning-fast Snapdragon 888 processor, and cutting-edge dual-camera system, the Pixel 7 empowers you to capture, create, and connect like never before. Discover the possibilities with the Pixel 7."
+    },
+    
+    {
+        "id": 5,
+        "category": "Smartphones",
+        "name": "OnePlus 12 Pro",
+        "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_136812196?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
+        "specifications": {
+            "Operating System": "OxygenOS 12",
+            "Display": "6.8 inches, Fluid AMOLED",
+            "Processor": "Octa-core Snapdragon 898",
+            "RAM": "12 GB",
+            "Storage": "512 GB",
+            "Camera": "Triple 50 MP + 12 MP + 8 MP",
+            "Battery": "5000 mAh",
+            "Price": "1099"
+        },
+        "description": "Experience the power of speed and performance with the OnePlus 12 Pro. Boasting a stunning Fluid AMOLED display, blazing-fast Snapdragon 898 processor, and advanced triple-camera system, the OnePlus 12 Pro is designed to elevate your mobile experience to new heights. Get ready to conquer the digital world with the OnePlus 12 Pro."
+    },
+    {
+        "id": 6,
+        "category": "Smartphones",
+        "name": "Redmi Note 12 Pro",
+        "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_108192417?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
+        "specifications": {
+            "Operating System": "MIUI 14",
+            "Display": "6.6 inches, IPS LCD",
+            "Processor": "Octa-core MediaTek Dimensity 2000",
+            "RAM": "8 GB",
+            "Storage": "256 GB",
+            "Camera": "Quad 108 MP + 16 MP + 8 MP + 5 MP",
+            "Battery": "5500 mAh",
+            "Price": "699"
+        },
+        "description": "Unleash your creativity with the Redmi Note 12 Pro, Xiaomi's premium mid-range smartphone. Featuring a vibrant IPS LCD display, powerful MediaTek Dimensity 2000 processor, and versatile quad-camera system, the Redmi Note 12 Pro empowers you to capture, create, and connect with ease. Elevate your mobile experience with the Redmi Note 12 Pro."
+    }
+] 
