@@ -1,11 +1,11 @@
-import { Provider } from "react-redux";
-import { store } from './store'
+// import { Provider } from "react-redux";
+// import { store } from './store'
 
-export function Providers ({children}) {
-    return (
+// export function Providers ({children}) {
+//     return (
 
-        <Prodiver store={store}>
-            {children}
-        </Prodiver>
-    )
-}   
+//         <Prodiver store={store}>
+//             {children}
+//         </Prodiver>
+//     )
+// }   

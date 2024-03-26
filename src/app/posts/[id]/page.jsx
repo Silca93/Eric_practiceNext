@@ -1,20 +1,38 @@
+'use client'
 import React from 'react'
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
-export default async function page({params}) {
-  const response = await fetch('https://dummyjson.com/posts');
-  const data = await response.json();
+export default function page({params}) {
+  // const response = await fetch('https://dummyjson.com/posts');
+  // const data = await response.json();
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+     fetch('https://dummyjson.com/posts')
+       .then(response => response.json())
+       .then(data => setData(data.posts));
+  }, []);
+
   return (
     <div className="w-full flex justify-center">
       
-      <div>Posts:
+      <div>Post n#:
 
-      {data.posts.map((post, index) => (
+      {data.map((post, index) => (
         <p key={index}>
-          {post.title} 
+          <Link href={`/posts/${index}`}>
+            {post.title} 
+          </Link>
         </p>
       ))}
-      <p className="text-3xl"> {data && data.posts[params.id].title}  </p>
-     
+      <div className="w-[20rem] h-[10rem] bg-slate-300 text-center px-3 rounded-lg my-4">
+        <p>Highlighted title : </p>
+
+      {data && data[params.id] && <p className="text-3xl">{data[params.id].title}</p>}
+      </div>
+      {/* <p className="text-3xl"> {data && data[params.id].title}  </p>
+      */}
       </div>
     </div>
   )

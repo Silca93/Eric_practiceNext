@@ -5,7 +5,7 @@
         "name": "Galaxy S23",
         "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_101836612?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
         "specifications": {
-            "Operating System": "Android 17",
+            "OS": "Android 17",
             "Display": "6.7 inches, Super AMOLED",
             "Processor": "Octa-core Exynos 1400",
             "RAM": "8 GB",
@@ -23,7 +23,7 @@
         "name": "iPhone 15 Pro",
         "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_118110719?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
         "specifications": {
-            "Operating System": "iOS 20",
+            "OS": "iOS 20",
             "Display": "6.5 inches, Super Retina XDR",
             "Processor": "Hexa-core A18 Bionic",
             "RAM": "6 GB",
@@ -41,7 +41,7 @@
         "name": "Pixel 7",
         "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_125977698?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
         "specifications": {
-            "Operating System": "Android 18",
+            "OS": "Android 18",
             "Display": "6.4 inches, OLED",
             "Processor": "Octa-core Snapdragon 888",
             "RAM": "12 GB",
@@ -60,7 +60,7 @@
         "name": "OnePlus 12 Pro",
         "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_136812196?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
         "specifications": {
-            "Operating System": "OxygenOS 12",
+            "OS": "OxygenOS 12",
             "Display": "6.8 inches, Fluid AMOLED",
             "Processor": "Octa-core Snapdragon 898",
             "RAM": "12 GB",
@@ -77,7 +77,7 @@
         "name": "Redmi Note 12 Pro",
         "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_108192417?x=320&y=320&format=jpg&quality=80&sp=yes&strip=yes&trim&ex=320&ey=320&align=center&resizesource&unsharp=1.5x1+0.7+0.02&cox=0&coy=0&cdx=320&cdy=320",
         "specifications": {
-            "Operating System": "MIUI 14",
+            "OS": "MIUI 14",
             "Display": "6.6 inches, IPS LCD",
             "Processor": "Octa-core MediaTek Dimensity 2000",
             "RAM": "8 GB",

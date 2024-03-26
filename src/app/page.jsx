@@ -1,6 +1,7 @@
   'use client'
   import { useState } from "react";
   import { useRef } from "react";
+  import Image from "next/image";
   //redux//
   import { useDispatch, useSelector } from "react-redux";
   import { increment, decrement, incrementByAmount } from "./GlobalRedux/Features/counter/counterSlice";
@@ -10,6 +11,7 @@
 
  //json//
   import data from './database/smartphones.json';
+import Link from "next/link";
 
   export default function Home() {
     
@@ -63,14 +65,21 @@
 
           {filteredPhones.length > 0 &&
           filteredPhones.map((element, index) => (
-
             <div key={index} id="" className="CARD card w-[330px] h-[600px] bg-white-500 mx-2 mt-5">
-              <div className="top w-full h-[10%] bg-[#403D39] flex justify-end items-center rounded-t-lg pr-5">
-                <span className='text-white text-[2rem] mr-5'></span>
-              </div>  
+                <div className="top w-full h-[10%] bg-gray-400 flex justify-center items-center rounded-t-lg overflow-hidden">
+              <Link href={`/${index}`}>
+                  <button className='text-white text-[1.5rem]  b block w-[500px] h-[60px]'>DETAILS</button>
+              </Link>   
+                </div> 
               
               <div className="mid w-full h-[40%] max-[500px]:h-[40%] bg-white flex justify-center ">
-                <img src={element.image} alt="" srcset="" />
+                {/* <img src={element.image} alt="" srcset="" /> */}
+                <Image
+                    src={element.image}
+                    alt="image of paypal logo"
+                    width="250"
+                    height="0"
+                />
               </div>
               <div className="bot w-full h-[45%]  bg-[#403D39] rounded-b-lg">
                 <div className="itemInfo w-full h-full flex flex-col justify-start px-4 gap-3">
@@ -84,6 +93,7 @@
                 </div>
               </div>
             </div>
+          
             )) 
             }
         </div>
