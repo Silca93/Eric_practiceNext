@@ -18,7 +18,7 @@ export default function Cart() {
         <div className="w-[25rem] h-[20rem] bg-gray-400 rounded-xl flex flex-col justify-center items-center ">
             <p className="text-xl text-white">YOUR ITEMS:</p>
             <div className="overflow-y-scroll">{basket.map((element, index) => (
-              <div className="flex gap-5">
+              <div key={index} className="flex gap-5">
                 <Image
                 src={element.image}
                 alt={"image of phone"}
