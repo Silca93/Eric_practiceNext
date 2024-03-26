@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import data from './../database/smartphones.json'   
 
-export default function page({params}) {
+export default function Page({params}) {
   return (
     
     <div className='details w-full flex'>
