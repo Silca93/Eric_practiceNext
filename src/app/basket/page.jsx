@@ -14,7 +14,7 @@ export default function Cart() {
   }, 0);
 
   return (
-    <div className="w-dvw h-dvh  flex justify-center items-center">
+    <div className="w-vw h-dvh  flex justify-center items-center">
         <div className="w-[25rem] h-[20rem] bg-gray-400 rounded-xl flex flex-col justify-center items-center ">
             <p className="text-xl text-white">YOUR ITEMS:</p>
             <div className="overflow-y-scroll">{basket.map((element, index) => (

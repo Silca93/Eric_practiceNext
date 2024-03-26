@@ -1,5 +1,5 @@
   'use client'
-  import { useState } from "react";
+  import { useEffect, useState } from "react";
   import { useRef } from "react";
   import Image from "next/image";
   //redux//
@@ -23,19 +23,30 @@ import Link from "next/link";
     
   const [filteredPhones, setFilteredPhones] = useState(data);
 
-  const filterBySearch = () => {
-    const filteredBySearch = data.filter((phone) =>
-      phone.name.toLowerCase().includes(searchVal.toLowerCase())
-    );
-    setFilteredPhones(filteredBySearch);
-  };
+
+  useEffect(() => {
+    const filterBySearch = () => {
+
+      if (searchVal.length < 1) {
+        setFilteredPhones(data);
+        return;
+      }
+      const filteredBySearch = data.filter((phone) =>
+        phone.name.toLowerCase().includes(searchVal.toLowerCase())
+      );
+      setFilteredPhones(filteredBySearch);
+    };
+   
+    filterBySearch();
+  }, );
+  
 
 
   const inputValue = useRef(null)
 
 
     return (
-      <main className="flex w-dvw flex-col items-center gap-5">
+      <main className="flex w-vw flex-col items-center gap-5">
         
         <div className="w-full h-[5rem] flex gap-5 ">
           <div className="dropdown dropdown-right mx-5">
@@ -46,7 +57,7 @@ import Link from "next/link";
             </ul>
           </div>
           <div>
-            <input onChange={(e) => {setSearchVal(e.target.value), filterBySearch()}} className="w-[15rem] h-[3rem] rounded-md mt-1" type="text" placeholder="Search by..." />
+            <input onChange={(e) => setSearchVal(e.target.value)} className="w-[15rem] h-[3rem] rounded-md mt-1" type="text" placeholder="Search by..." />
           </div>
         </div>
         <div className="incrementor w-[19rem] h-[9rem] bg-gray-100 rounded-xl">
@@ -97,6 +108,34 @@ import Link from "next/link";
             )) 
             }
         </div>
+        <div className="carousel w-full">
+          <div id="item3" className="carousel-item w-full">
+            <img src="https://images.pexels.com/photos/159220/printed-circuit-board-print-plate-via-macro-159220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="w-full h-[40rem]" />
+          </div> 
+          <div id="item1" className="carousel-item w-full">
+            <img src="https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="w-full h-[40rem]" />
+          </div> 
+          <div id="item2" className="carousel-item w-full">
+            <img src="https://media.istockphoto.com/id/1360927961/fr/photo/arri%C3%A8re-plan-abstrait-avec-entrelacement-de-lignes-et-de-points-color%C3%A9s-structure-de.jpg?s=2048x2048&w=is&k=20&c=8Rd8KzZK45uGVcmM-fjj9IhgR27yv7TvdP1ZjpFf93A=" className="w-full h-[40rem]" />
+          </div> 
+          
+        </div> 
+        <div className="flex justify-center w-full py-2 gap-2">
+                <a href="#item1" className="btn btn-xs">1</a> 
+                <a href="#item2" className="btn btn-xs">2</a> 
+                <a href="#item3" className="btn btn-xs">3</a> 
+                <a href="#item4" className="btn btn-xs">4</a>
+              </div>
+              <div className="diff aspect-[16/9]">
+        <div className="diff-item-1">
+          <div className="bg-primary text-primary-content text-9xl font-black grid place-content-center">NESTEK</div>
+        </div>
+        <div className="diff-item-2">
+          <div className="bg-base-200 text-9xl font-black grid place-content-center">NESTEK</div>
+        </div>
+        <div className="diff-resizer"></div>
+      </div>
+      
       </main>
     );
   }
